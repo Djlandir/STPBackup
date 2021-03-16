@@ -1,0 +1,1 @@
+﻿Scaffold-DbContext "Server=(localdb)\mssqllocaldb;Initial Catalog=STPDB;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Model -t User -f

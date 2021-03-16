@@ -1,0 +1,5 @@
+<div class="alert alert-danger" *ngIf="form && submitted && formErrors && formErrors.length > 0">
+    <div *ngFor="let error of formErrors">
+        <div>{{error.val}}</div>
+    </div>
+</div>

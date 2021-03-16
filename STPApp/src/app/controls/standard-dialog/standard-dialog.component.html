@@ -1,0 +1,12 @@
+<h1 mat-dialog-title>{{data.header}}</h1>
+<div mat-dialog-content>
+    <p>{{data.message}}</p>
+</div>
+<div mat-dialog-actions align="end">
+    <button class="btn" *ngIf="data.type == dialogType.YesNo" mat-raised-button color="primary" (click)="onYesClick()"
+        cdkFocusInitial>Ja</button>
+    <button class="btn ml-3" *ngIf="data.type == dialogType.YesNo" mat-raised-button (click)="onNoClick()">Nein</button>
+    <button class="btn" *ngIf="data.type == dialogType.Ok || data.type == dialogType.OkCancel" mat-raised-button color="primary"
+        (click)="onOkClick()" cdkFocusInitial>Ok</button>
+    <button class="btn ml-3" *ngIf="data.type == dialogType.OkCancel" mat-raised-button (click)="onCancelClick()">Abbrechen</button>
+</div>
